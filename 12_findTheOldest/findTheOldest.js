@@ -23,7 +23,6 @@ const findTheOldest = function(records) {
             continue;
         }
 
-        // let age = record.yearOfDeath - record.yearOfBirth;
         let age = getAge(record);
         if (highestAge < age) {
             highestAge = age;
