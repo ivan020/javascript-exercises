@@ -1,7 +1,7 @@
 
 const removePunctuation = function(word) {
     var punctuationless = word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
-    var finalString = punctuationless.replace(/\s{2,}/g, "");
+    var finalString = punctuationless.replace(/\s+/g, "");
     return finalString;
 }
 
